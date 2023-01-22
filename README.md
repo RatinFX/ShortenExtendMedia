@@ -4,7 +4,7 @@ Vegas Pro script for shortening or extending the selected media (text, video, au
 
 ![](previewPic.png)
 
-### Info:
+### Info
 
 - Decreasing the length of the selected objects (Shorten)
 
@@ -14,7 +14,7 @@ Vegas Pro script for shortening or extending the selected media (text, video, au
 
 Viddeo: https://www.youtube.com/watch?v=z_W8w6uBasw
 
-### Download:
+### Download
 
 Releases: https://github.com/RatinA0/ShortenExtendMedia/releases
 
