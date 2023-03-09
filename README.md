@@ -1,4 +1,4 @@
-# ShortenExtendMedia
+# Shorten/Extend media
 
 Vegas Pro script for shortening or extending the selected media (text, video, audio, etc)
 
