@@ -2,35 +2,30 @@
 
 Vegas Pro script for shortening or extending the selected media (text, video, audio, etc)
 
-![](previewPic.png)
+![](preview.png)
 
-### Info
+## Video
 
-- Decreasing the length of the selected objects (Shorten)
+https://www.youtube.com/watch?v=z_W8w6uBasw
 
-- Increase the length of the selected objects (Extend)
+## Overview
 
-(!) The Composite/FX Keyframes will NOT move if you change the events with this.
+Quickly **Increase** or **Decrease** the length of the **selected Events**
 
-Viddeo: https://www.youtube.com/watch?v=z_W8w6uBasw
+You can select between **Frames** and **Seconds** to calculate the new lengths
 
-### Download
+- However: Composite and FX Keyframes will **not** move
 
-Releases: https://github.com/RatinA0/ShortenExtendMedia/releases
 
-`ShortenExtendMedia13.dll` for SONY Vegas Pro 13 and below
+## How to use
 
-`ShortenExtendMedia14.dll` for MAGIX Vegas Pro 14 and above
+1. Download "...13" or "...14" depending on your `VEGAS Pro version`
+2. Find or create a folder called Vegas Script Menu inside your Documents folder like this:
+    - `C:\Users\USER_NAME\Documents\Vegas Script Menu`
+3. Place the .dll file, or Extract the contents of the .zip file into the folder above
+4. Start VEGAS Pro and you can find the Script at `Tools - Scripting`
 
-### Run
-
-Place the file in: `...\vegas install folder\Script Menu` or `...\Documents\Vegas Script Menu`
-
-Run from Vegas: Tools -> Scripting -> Rescan Script Menu Folder -> Click the script
-
-Add to the toolbar: Options -> Customize Toolbar
-
-### Build
+## Build
 
 Import the correct reference:
 
