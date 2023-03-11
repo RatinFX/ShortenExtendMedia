@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 using ScriptPortal.Vegas;
-//using Sony.Vegas;
 
 namespace ShortenExtendMedia
 {
@@ -19,13 +17,9 @@ namespace ShortenExtendMedia
         public WndForm()
         {
             InitializeComponent();
-            FormBorderStyle = FormBorderStyle.FixedSingle;
             nudShorten.Select();
-        }
 
-        private void lblShortenExtendMediaAbout_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://github.com/RatinA0/ShortenExtendMedia");
+            Helper.ChangeTheme(menuStrip);
         }
 
         private void btnRun_Click(object sender, EventArgs e)
@@ -42,13 +36,18 @@ namespace ShortenExtendMedia
             Dispose();
         }
 
-        private void btnHelp_Click(object sender, EventArgs e)
+        private void tsmiCreatedByRatinFX_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("- - - - - - - - - - - What can you do? - - - - - - - - - - -" +
-                   "\n\n" + "> Decreasing the length of the selected objects (Shorten)" +
-                   "\n\n" + "> Increase the length of the selected objects (Extend)" +
-                   "\n\n" + "(!) If you change the duration like this," +
-                     "\n" + "    the Composite/FX Keyframes will NOT move.", "help?", MessageBoxButtons.OK);
+            Helper.OpenRatinFXWebsite();
+        }
+
+        private void tsmiAbout_Click(object sender, EventArgs e)
+        {
+            Helper.ShowAbout(
+                "Quickly Increase or Decrease the length of the selected Events" + "\n\n" +
+                "You can select between Frames and Seconds to calculate the new lengths" + "\n\n" +
+                "- However: Composite and FX Keyframes will not move"
+            );
         }
     }
 
